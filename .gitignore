@@ -1,0 +1,5 @@
+# Dependency directories
+projet_npm/node_modules/
+
+.DS_Store
+projet_npm/.DS_Store
