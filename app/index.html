@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1 :class="{ red: isRed }">Titre 1 : {{ titre1 }}</h1> 
+        <input v-model="titre1" placeholder="Définis ton titre 1 ici">
+        <h2 :class="{ red: isRed }">Titre 2 : {{ titre2 }}</h2>
+        <input v-model="temptitre2" placeholder="Définis ton titre 2 ici">
+        <button v-on:click="afficherTitre2">Valider</button>
+        <br/>
+        <input type="checkbox" id="checkbox" v-model="isRed"  />
+        <label for="checkbox">Mettre les titres en rouge</label>
+        <h2>Photo de British Longhair :</h2>
+        <input type="checkbox" id="checkbox" v-model="printImg"  />
+        <label for="checkbox">Afficher le chat</label>
+        <br/>
+        <img src="https://www.perles-de-satin.fr/wp-content/uploads/2020/03/nice-110320-1.jpg" alt="British Longhair" v-if="printImg===true">
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>
