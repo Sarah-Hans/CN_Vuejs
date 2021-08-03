@@ -6,7 +6,7 @@ Vue.createApp({
             titre2: '',
             temptitre2: '',
             isRed: false,
-            printImg: false,
+            isImgVisible: false,
         }
     },
     methods: {

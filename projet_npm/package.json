@@ -1,0 +1,18 @@
+{
+  "name": "projet_npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "keywords": [],
+  "author": "Sarah Hans <leawine@gmail.com> (https://www.sarah-hans.com/)",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "imagemin": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}
